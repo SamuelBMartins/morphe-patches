@@ -1,5 +1,105 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
+  "version": "1.0.0-dev.1",
+  "patches": [
+    {
+      "name": "Disable ad mediation SDK",
+      "description": "Prevents the Unity LevelPlay, AppLovin, ironSource, Vungle and Tapjoy SDKs from starting up, which also stops their tracking. Rewarded ads can no longer be watched to earn Ink or unlock episodes.",
+      "default": false,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.tapastic",
+          "name": "Tapas",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F4B404",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.13.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": "Hides banner ads in the episode viewer, comments and series pages, and hides Tapas' own in-house promo ads.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.tapastic",
+          "name": "Tapas",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F4B404",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.13.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide promo popups",
+      "description": "Hides the full screen promo popups shown on the home tab, including the \"Free Ink offer\" popup, and stops Braze marketing overlays from being shown. Push notifications are not affected.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.tapastic",
+          "name": "Tapas",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#F4B404",
+          "signatures": null,
+          "targets": [
+            {
+              "version": null,
+              "versionCodes": null,
+              "isExperimental": true,
+              "minSdk": null,
+              "description": null
+            },
+            {
+              "version": "7.13.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
 }
