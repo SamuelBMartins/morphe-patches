@@ -20,7 +20,7 @@ cd "$(dirname "$0")"
 
 PATCHER_JAR=/usr/share/java/morphe-desktop/morphe-desktop.jar
 OUT_DIR=build-local
-MPP="$OUT_DIR/tapas-patches.mpp"
+MPP="$OUT_DIR/patches.mpp"
 
 # Minimum API level of the Morphe Manager app that loads the dex.
 MIN_API=26
