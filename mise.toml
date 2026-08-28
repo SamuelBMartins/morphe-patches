@@ -1,0 +1,5 @@
+[tools]
+# Gradle 9.7.1 and the Kotlin plugin do not support the JDK 27 default on this machine.
+java = "temurin-21"
+android-sdk = "23.0"
+kotlin = { version = "latest", asset_pattern = "kotlin-compiler-*.zip", bin_path = "kotlinc/bin" }
