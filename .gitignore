@@ -115,6 +115,15 @@ gradle-app.setting
 
 # Potentially copyrighted test APK
 *.apk
+*.apkm
+apks/
+
+# Local reverse engineering scratch space (decompiled app, downloaded jadx/apktool)
+work/
+tools/
+
+# Output of build-local.sh
+build-local/
 
 # Ignore vscode config
 .vscode/
